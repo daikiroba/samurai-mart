@@ -1,7 +1,7 @@
 class CreateCategories < ActiveRecord::Migration[7.0]
   def change
     create_table :categories do |t|
-      t.string :major_category_name
+      t.string :major_category_name, default: "Food"
       t.string :name
       t.text :description
       t.timestamps
